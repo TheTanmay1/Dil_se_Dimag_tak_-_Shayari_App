@@ -1,0 +1,38 @@
+package com.unwiringapps.dilsedimagtak_shayariapp.adapter
+
+import android.graphics.Color
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.unwiringapps.dilsedimagtak_shayariapp.MainActivity
+import com.unwiringapps.dilsedimagtak_shayariapp.databinding.ItemCatBinding
+
+class CategoryAdapter(val mainActivity: MainActivity, val list: ArrayList<String>) :
+    RecyclerView.Adapter<CategoryAdapter.CatViewHolder>() {
+
+    val colorLister =
+        arrayListOf<String>("#2193b0", "#cc2b5e", "#ee9ca7", "#42275a", "#de6262", "#06beb6")
+    val colorLister1 =
+        arrayListOf<String>("#E2F516", "#FBF6D9", "#2B1B17", "#EE82EE", "#DCD0FF", "#FFF5EE")
+
+    class CatViewHolder(val binding: ItemCatBinding) : RecyclerView.ViewHolder(binding.root)
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CatViewHolder {
+        return CatViewHolder(
+            ItemCatBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
+    }
+
+    override fun onBindViewHolder(holder: CatViewHolder, position: Int) {
+        holder.binding.itemTxt.text = list[position]
+        holder.binding.rcvCard.setBackgroundColor(Color.parseColor(colorLister[position]))
+        holder.binding.itemTxt.setTextColor(Color.parseColor(colorLister1[position]))
+    }
+
+    override fun getItemCount() = list.size
+}

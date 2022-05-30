@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/drawerLayout"
+    android:id="@+id/drawerLayout1"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -13,6 +13,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center_vertical"
@@ -20,11 +21,12 @@
         android:background="#000000">
 
         <ImageView
+            android:id="@+id/btnMenu"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginStart="15dp"
             android:backgroundTint="@color/white"
-            android:background="@drawable/ic_baseline_menu_book_24"/>
+            android:background="@drawable/ic_baseline_menu_24"/>
 
 <TextView
     android:layout_width="match_parent"
@@ -41,7 +43,12 @@
 
     </LinearLayout>
 
-
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/toolbar"
+    android:id="@+id/rcvCategory"
+    android:layout_margin="15dp"/>
 
 
 </RelativeLayout>
