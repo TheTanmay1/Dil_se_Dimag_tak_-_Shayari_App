@@ -1,10 +1,12 @@
 package com.unwiringapps.dilsedimagtak_shayariapp.adapter
 
+import android.content.Intent
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.unwiringapps.dilsedimagtak_shayariapp.AllShayariActivity
 import com.unwiringapps.dilsedimagtak_shayariapp.MainActivity
 import com.unwiringapps.dilsedimagtak_shayariapp.Model.CatModel
 import com.unwiringapps.dilsedimagtak_shayariapp.databinding.ItemCatBinding
@@ -34,6 +36,20 @@ class CategoryAdapter(val mainActivity: MainActivity, val listrr: ArrayList<CatM
 //        holder.binding.rcvCard.setBackgroundColor(Color.parseColor(colorLister[position]))
         holder.binding.rcvCard.setCardBackgroundColor(Color.parseColor(colorLister[position]))
         holder.binding.itemTxt.setTextColor(Color.parseColor(colorLister1[position]))
+
+        holder.binding.root.setOnClickListener {
+
+            val intent = Intent(mainActivity, AllShayariActivity::class.java)
+
+            intent.putExtra("id", listrr[position].id)
+            intent.putExtra("name", listrr[position].name)
+
+            mainActivity.startActivity(intent)
+
+
+
+        }
+
     }
 
     override fun getItemCount() = listrr.size

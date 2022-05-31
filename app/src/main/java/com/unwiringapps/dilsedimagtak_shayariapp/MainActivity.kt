@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
             val listrr  = arrayListOf<CatModel>()
             val datarr = value?.toObjects(CatModel::class.java)
-            listrr.addAll(datarr!!)
+            listrr.addAll(datarr!!) 
 
 
             binding.rcvCategory.layoutManager = LinearLayoutManager(this)
