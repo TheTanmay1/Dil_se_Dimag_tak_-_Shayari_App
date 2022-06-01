@@ -47,8 +47,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_below="@id/toolbar"
-    android:id="@+id/rcvCategory"
-    android:layout_margin="15dp"/>
+    android:id="@+id/rcvCategory" />
 
 
 </RelativeLayout>

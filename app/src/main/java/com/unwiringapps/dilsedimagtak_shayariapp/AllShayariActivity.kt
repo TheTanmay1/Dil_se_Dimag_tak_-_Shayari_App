@@ -3,11 +3,16 @@ package com.unwiringapps.dilsedimagtak_shayariapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.firestore.FirebaseFirestore
+import com.unwiringapps.dilsedimagtak_shayariapp.Model.ShayariModel
+import com.unwiringapps.dilsedimagtak_shayariapp.adapter.AllShayariAdapter
 import com.unwiringapps.dilsedimagtak_shayariapp.databinding.ActivityAllShayariBinding
 
 class AllShayariActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityAllShayariBinding
+    lateinit var db: FirebaseFirestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +36,23 @@ class AllShayariActivity : AppCompatActivity() {
 
         binding.catText1.text = name.toString()
 
+        binding.btnBack.setOnClickListener {
+            onBackPressed()
+        }
+
+
+        db = FirebaseFirestore.getInstance()
+
+        db.collection("tanmayshayari").document(id!!).collection("all").addSnapshotListener { value, error ->
+
+            val shayarilistrr  = arrayListOf<ShayariModel>()
+            val shayaridatarr = value?.toObjects(ShayariModel::class.java)
+            shayarilistrr.addAll(shayaridatarr!!)
+
+
+            binding.rcvallS.layoutManager = LinearLayoutManager(this)
+            binding.rcvallS.adapter = AllShayariAdapter(this, shayarilistrr)
+        }
 
 
 

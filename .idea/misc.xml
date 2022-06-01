@@ -3,11 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/drawable/btn_round_shape.xml" value="0.1575" />
+        <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/drawable/gradient_1.xml" value="0.1575" />
+        <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/drawable/gradient_2.xml" value="0.1575" />
+        <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/drawable/gradient_3.xml" value="0.1575" />
+        <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/drawable/gradient_4.xml" value="0.1575" />
+        <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/drawable/gradient_5.xml" value="0.1575" />
+        <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/drawable/gradient_6.xml" value="0.1575" />
+        <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/drawable/ic_baseline_content_copy_24.xml" value="0.1575" />
+        <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.1575" />
         <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/layout/activity_all_shayari.xml" value="0.25833333333333336" />
         <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/layout/activity_splash_screen.xml" value="0.25833333333333336" />
         <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/layout/header_layout.xml" value="0.25729166666666664" />
         <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/layout/item_cat.xml" value="0.25833333333333336" />
+        <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/layout/item_shayari.xml" value="0.25833333333333336" />
         <entry key="..\:/03)androidstudioprojects28may2022kotlinonly/02)dil_se_dimag_tak_-_Shayari_App/app/src/main/res/menu/drawer_menu.xml" value="0.25729166666666664" />
       </map>
     </option>
